@@ -1,12 +1,9 @@
 # Marketplace
 DeSci Data validation built in Chromion Hackathon
 
-
 # Ginger Science Data Marketplace – Chromion Hackathon Plan
 
 This project outlines a decentralized data marketplace designed for sunscreen product reviews and redhead-specific wellness research. It combines off-chain data validation, NFT-based packaging, and cross-chain delivery using Chainlink infrastructure. The architecture uses Base or Solana for data ingestion and Avalanche for distribution and marketplace operations.
-
----
 
 ## Phase 1: Data Ingestion and NFT Minting (Base or Solana)
 
@@ -17,15 +14,11 @@ This project outlines a decentralized data marketplace designed for sunscreen pr
   - Unique UUID or metadata record ID.
   - Timestamp and validation signature from the agent.
 
----
-
 ## Phase 2: Lootbox Minting and Marketplace Launch (Avalanche)
 
 - A smart contract on Avalanche enables mint-on-demand lootbox NFTs.
 - Buyers mint lootboxes, which represent access rights to research datasets.
 - **Chainlink VRF (Verifiable Random Function)** assigns randomized contents or reward tiers to each lootbox.
-
----
 
 ## Phase 3: Data Verification via Chainlink Functions
 
@@ -34,15 +27,11 @@ This project outlines a decentralized data marketplace designed for sunscreen pr
   - Confirm origin of the data (e.g., from the Base/Solana contract).
   - Optionally verify ingredients or certification against trusted external APIs (e.g., INCI, PubMed).
 
----
-
 ## Phase 4: Secure Data Delivery via AWS S3
 
 - A lightweight backend service verifies NFT ownership via wallet signature.
 - Upon validation, authorized users receive access to the gated data via **AWS S3**.
 - The lootbox NFT serves as a cryptographic credential for dataset access.
-
----
 
 ## Phase 5: Cross-Chain Interoperability via Chainlink CCIP
 
@@ -50,8 +39,6 @@ This project outlines a decentralized data marketplace designed for sunscreen pr
   - Transfer of metadata proofs between chains.
   - Avalanche contracts validating NFTs minted on Base or Solana.
   - Future cross-chain use cases (e.g., staking, redemption, research unlocks).
-
----
 
 ## Stretch Enhancements (Optional)
 
@@ -64,8 +51,6 @@ This project outlines a decentralized data marketplace designed for sunscreen pr
   - Display NFT holdings and dataset unlock history.
   - Manage access credentials and community bounties.
   - Track data usage or redemptions.
-
----
 
 ## Summary
 
